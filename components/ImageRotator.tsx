@@ -35,7 +35,7 @@ export default function ImageRotator({
             alt={currentImage.alt ?? "Artwork"}
             width={1200}
             height={1200}
-            className="w-full max-w-[480px] h-auto"
+            className="w-full max-w-[480px] h-auto rounded-xl"
             priority
         />
     );
