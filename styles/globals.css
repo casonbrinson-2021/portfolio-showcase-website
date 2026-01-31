@@ -3,6 +3,17 @@
 :root {
     --background: #f7f7f5; /* warm gallery white */
     --foreground: #1f1f1f; /* softer black */
+
+    --text-muted: #6b6b6b;
+
+    /* Typography scale */
+    --text-heading: 3.25rem; /* 52px */
+    --text-subheading: 1.75rem; /* 28px */
+    --text-paragraph: 1.125rem; /* 18px */
+    --text-caption: 0.875rem; /* 14px */
+
+    --line-heading: 1.15;
+    --line-paragraph: 1.7;
 }
 
 @theme inline {
@@ -12,17 +23,18 @@
     --font-mono: var(--font-geist-mono);
 }
 
+/* Dark mode */
 /* @media (prefers-color-scheme: dark) {
-    :root {
-        --background: #0a0a0a;
-        --foreground: #ededed;
-    }
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --text-muted: #9a9a9a;
+  }
 } */
 
 body {
     background: var(--background);
     color: var(--foreground);
-    font-family: Arial, Helvetica, sans-serif;
     font-family:
         system-ui,
         -apple-system,
@@ -32,4 +44,45 @@ body {
         Helvetica,
         Arial,
         sans-serif;
+}
+
+/* Main page headings */
+.text-heading {
+    font-size: var(--text-heading);
+    line-height: var(--line-heading);
+    font-weight: 400;
+}
+
+/* Secondary headings (optional but useful) */
+.text-subheading {
+    font-size: var(--text-subheading);
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+/* Paragraph text */
+.text-paragraph {
+    font-size: var(--text-paragraph);
+    line-height: var(--line-paragraph);
+    font-weight: 400;
+    max-width: 65ch;
+}
+
+/* Small metadata / captions */
+.text-caption {
+    font-size: var(--text-caption);
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+/* -------------------------
+   MOBILE ADJUSTMENTS
+-------------------------- */
+@media (max-width: 768px) {
+    :root {
+        --text-heading: 2.25rem; /* 36px */
+        --text-subheading: 1.5rem; /* 24px */
+        --text-paragraph: 1rem; /* 16px */
+    }
 }

@@ -2,20 +2,22 @@ export default function Footer() {
     return (
         <footer className="">
             <div className="px-6 py-8 text-sm flex justify-between">
-                <span>© {new Date().getFullYear()} Megan</span>
+                <span className="text-caption">
+                    © {new Date().getFullYear()} Megan Joy Designs
+                </span>
 
                 <div className="flex gap-4">
                     <a
                         href="#"
-                        className="hover:opacity-60"
+                        className="text-caption hover:opacity-60 transition-opacity"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
                         Instagram
                     </a>
                     <a
-                        href="mailto:hello@meganart.com"
-                        className="hover:opacity-60"
+                        href="mailto:meganjoylee2000@gmail.com"
+                        className="text-caption hover:opacity-60 transition-opacity"
                     >
                         Email
                     </a>
