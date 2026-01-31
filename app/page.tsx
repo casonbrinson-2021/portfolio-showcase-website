@@ -1,11 +1,16 @@
 import Image from "next/image";
 import RotatingArtwork from "@/components/ImageRotator";
 
+//TODO:
+// After everything is all polished come back and work on performance like
+// maybe we dont need all the images loaded or even showing if th euser is
+// at the top of the web page
+
 export default function Home() {
     return (
         <>
+            {/* Hero Image Section */}
             <section className="w-full flex mb-12">
-                {/* Hero images */}
                 <div className="w-1/2">
                     <Image
                         src="/hero-1.jpeg"
@@ -27,6 +32,7 @@ export default function Home() {
                 </div>
             </section>
 
+            {/* Info section */}
             <section className="w-full py-12 px-24 flex justify-between gap-12">
                 <div className="w-1/2 flex flex-col gap-6">
                     <h1 className="text-heading">Art that Brings Joy</h1>
@@ -49,6 +55,7 @@ export default function Home() {
                 </div>
 
                 {/* Image showcase */}
+                {/* Add an on click that shows the words Gallery and then takes the user to the Gallery page */}
                 <div className="flex w-1/2 items-center justify-center">
                     <RotatingArtwork
                         images={[
@@ -57,36 +64,61 @@ export default function Home() {
                             { src: "/art-3.jpeg", alt: "Artwork 3" },
                             { src: "/art-4.jpeg", alt: "Artwork 3" },
                             { src: "/art-5.jpeg", alt: "Artwork 3" },
-                            { src: "/art-6.jpeg", alt: "Artwork 3" },
                         ]}
-                        interval={5000}
+                        intervalMs={5000}
                     />
                 </div>
             </section>
 
-            {/* Featured Artwork Grid */}
-            <section className="mb-16">
-                <h2 className="text-subheading mb-8 text-center">
-                    Featured Works
-                </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
+            {/* Testimonials */}
+            <section className="w-full py-12 px-24 flex flex-col gap-12">
+                <h2 className="text-heading">What People Are Saying</h2>
+
+                <div className="flex flex-col md:flex-row gap-8 justify-center">
+                    {/* Testimonial 1 */}
+                    <div className="flex-1 bg-white shadow-md rounded-lg p-6">
+                        <p className="text-paragraph italic">
+                            "Megan’s artwork completely transformed my living
+                            room. The colors are vibrant and her attention to
+                            detail is incredible!"
+                        </p>
+                        <span className="text-caption mt-4 block text-right">
+                            — Sarah L.
+                        </span>
+                        <span className="text-caption block text-right text-muted">
+                            via Facebook Marketplace
+                        </span>
                     </div>
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
+
+                    {/* Testimonial 2 */}
+                    {/* TODO: Make it so that the cards are always formatted the same (position of things) */}
+                    <div className="flex-1 bg-white shadow-md rounded-lg p-6">
+                        <p className="text-paragraph italic">
+                            "A true talent! Every piece she creates brings joy
+                            and energy into the space. Highly recommended for
+                            anyone looking for impactful art."
+                        </p>
+                        <span className="text-caption mt-4 block text-right">
+                            — Mark D.
+                        </span>
+                        <span className="text-caption block text-right text-muted">
+                            via Private Commission
+                        </span>
                     </div>
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
-                    </div>
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
-                    </div>
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
-                    </div>
-                    <div className="bg-gray-300 h-64 flex items-center justify-center">
-                        <span className="text-caption">Image Placeholder</span>
+
+                    {/* Testimonial 3 */}
+                    <div className="flex-1 bg-white shadow-md rounded-lg p-6">
+                        <p className="text-paragraph italic">
+                            "Working with Megan was a dream. She captured
+                            exactly what I was envisioning for my studio.
+                            Stunning work!"
+                        </p>
+                        <span className="text-caption mt-4 block text-right">
+                            — Emily R.
+                        </span>
+                        <span className="text-caption block text-right text-muted">
+                            via Facebook Marketplace
+                        </span>
                     </div>
                 </div>
             </section>

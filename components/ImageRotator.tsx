@@ -8,12 +8,12 @@ type ImageRotatorProps = {
         src: string;
         alt?: string;
     }[];
-    interval?: number; // milliseconds
+    intervalMs?: number; // milliseconds
 };
 
 export default function ImageRotator({
     images,
-    interval = 8000,
+    intervalMs = 8000,
 }: ImageRotatorProps) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -22,10 +22,10 @@ export default function ImageRotator({
 
         const timer = setInterval(() => {
             setCurrentIndex((prev) => (prev + 1) % images.length);
-        }, interval);
+        }, intervalMs);
 
         return () => clearInterval(timer);
-    }, [images.length, interval]);
+    }, [images.length, intervalMs]);
 
     const currentImage = images[currentIndex];
 
