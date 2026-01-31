@@ -3,6 +3,28 @@ import Image from "next/image";
 export default function Home() {
     return (
         <>
+            <section className="w-full flex h-[75vh] mb-12">
+                <div className="relative w-full md:w-1/2 h-[50vh] md:h-[75vh]">
+                    <Image
+                        src="/cover-1.jpeg"
+                        alt="Hero Artwork 1"
+                        fill
+                        style={{ objectFit: "cover" }}
+                        priority
+                    />
+                </div>
+
+                {/* Right image */}
+                <div className="relative w-full md:w-1/2 h-[50vh] md:h-[75vh]">
+                    <Image
+                        src="/megan-1.JPG"
+                        alt="Hero Artwork 2"
+                        fill
+                        style={{ objectFit: "cover" }}
+                        priority
+                    />
+                </div>
+            </section>
             {/* Hero Section */}
             <section className="mb-16 text-center">
                 <h1 className="text-heading mb-4">Lorem Ipsum Artis</h1>
