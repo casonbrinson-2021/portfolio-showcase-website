@@ -31,7 +31,7 @@ export default function ImageRotator({
 
     return (
         <div className="flex flex-col w-full items-center justify-center gap-4">
-            <div className="w-full max-w-[480px] h-auto rounded-xl ">
+            <div className="w-full max-w-[480px] h-auto rounded-xl overflow-hidden">
                 <Image
                     src={currentImage.src}
                     alt={currentImage.alt ?? "Artwork"}
