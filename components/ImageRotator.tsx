@@ -25,18 +25,36 @@ export default function ImageRotator({
         }, intervalMs);
 
         return () => clearInterval(timer);
-    }, [images.length, intervalMs]);
+    }, [currentIndex, images.length, intervalMs]);
 
     const currentImage = images[currentIndex];
 
     return (
-        <Image
-            src={currentImage.src}
-            alt={currentImage.alt ?? "Artwork"}
-            width={1200}
-            height={1200}
-            className="w-full max-w-[480px] h-auto rounded-xl"
-            priority
-        />
+        <div className="flex flex-col w-full items-center justify-center gap-4">
+            <div className="w-full max-w-[480px] h-auto rounded-xl ">
+                <Image
+                    src={currentImage.src}
+                    alt={currentImage.alt ?? "Artwork"}
+                    width={1200}
+                    height={1200}
+                    priority
+                />
+            </div>
+            {/* Dots */}
+            <div className="flex gap-3">
+                {images.map((_, index) => (
+                    <button
+                        key={index}
+                        onClick={() => setCurrentIndex(index)}
+                        aria-label={`Show image ${index + 1}`}
+                        className={`h-2 w-2 rounded-full transition-all duration-500 cursor-pointer ${
+                            index === currentIndex
+                                ? "bg-black scale-160"
+                                : "bg-black opacity-30 hover:opacity-50"
+                        }`}
+                    />
+                ))}
+            </div>
+        </div>
     );
 }
