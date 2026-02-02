@@ -39,7 +39,7 @@ export default function HomePage() {
 
             {/* Info section */}
             {/* Make the title above the other two elements */}
-            <section className="w-full py-12 px-24 flex justify-between gap-12 max-w-[2560px]">
+            <section className="w-full py-12 px-12 xl:px-24 flex justify-between gap-12 max-w-[2560px]">
                 <div className="w-1/2 flex flex-col gap-6">
                     <h1 className="text-heading">Art that Brings Joy</h1>
                     <p className="text-paragraph">
@@ -78,7 +78,7 @@ export default function HomePage() {
 
             {/* Testimonials */}
             {/* TODO: instead of just hiding three of them for mobile, make it a side scroll like chat gpt said */}
-            <section className="w-full py-12 px-24 flex flex-col gap-12 max-w-[2560px]">
+            <section className="w-full py-12 px-12 xl:px-24 flex flex-col gap-12 max-w-[2560px]">
                 <h2 className="text-heading">What People Are Saying</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -187,7 +187,7 @@ export default function HomePage() {
             </section>
 
             {/* Contact / Call to Action */}
-            <section className="w-full py-12 px-24 flex flex-col gap-12 ">
+            <section className="w-full py-12 px-12 xl:px-24 flex flex-col gap-12 ">
                 <h2 className="text-heading">Get in Touch</h2>
                 <div className="flex items-center gap-12">
                     <p className="text-paragraph w-full">

@@ -1,20 +1,23 @@
-"use client";
-
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 type GalleryImageProps = {
     src: string;
     slug: string;
+    caption: string;
     alt?: string;
 };
 
-export default function GalleryImage({ src, alt, slug }: GalleryImageProps) {
-    const router = useRouter();
+export default function GalleryImage({
+    src,
+    slug,
+    caption,
+    alt,
+}: GalleryImageProps) {
     return (
-        <div
-            className="relative w-full cursor-pointer overflow-hidden rounded-lg"
-            onClick={() => router.push(`/gallery/${slug}`)}
+        <Link
+            className="relative w-full cursor-pointer overflow-hidden rounded-lg flex flex-col gap-6"
+            href={`/gallery/${slug}`}
         >
             <Image
                 src={src}
@@ -23,6 +26,7 @@ export default function GalleryImage({ src, alt, slug }: GalleryImageProps) {
                 height={1200}
                 className="w-full h-auto object-cover rounded-lg"
             />
-        </div>
+            <span className=" text-caption whitespace-pre">{caption}</span>
+        </Link>
     );
 }

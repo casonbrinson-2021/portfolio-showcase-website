@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
         <footer className="">
-            <div className="px-24 py-6 text-sm flex justify-between">
+            <div className="px-12 xl:px-24 py-6 text-sm flex justify-between">
                 <span className="text-caption">
                     © {new Date().getFullYear()} Megan Joy Designs
                 </span>
