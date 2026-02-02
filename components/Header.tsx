@@ -10,7 +10,7 @@ export default function Header() {
 
                 <div className="flex gap-6">
                     <Link
-                        href="#"
+                        href="/gallery"
                         className="text-caption hover:opacity-60 transition-opacity"
                     >
                         Gallery
