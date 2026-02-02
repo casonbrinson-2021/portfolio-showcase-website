@@ -16,7 +16,7 @@ export default function GalleryDetailPage() {
     const imageSrc = `/${slug}.jpeg`; // adjust based on your folder structure
 
     return (
-        <section className="w-full flex flex-col items-center justify-start py-12 px-24 mx-auto gap-12">
+        <section className="w-full flex flex-col items-center justify-start py-12 px-12 xl:px-24 mx-auto gap-12">
             <div className="w-full flex justify-start items-center">
                 <Link
                     href="/gallery"
