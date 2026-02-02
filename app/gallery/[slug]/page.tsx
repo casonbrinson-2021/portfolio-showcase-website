@@ -12,9 +12,10 @@ export default function GalleryDetailPage() {
     const artwork = galleryImages.find((art) => art.slug === params.slug);
     if (!artwork) return <p>Artwork not found</p>;
 
-    // You could map the slug to actual image paths if needed
-    const imageSrc = `/${slug}.jpeg`; // adjust based on your folder structure
+    // folder location of the image
+    const imageSrc = `/${slug}.jpeg`;
 
+    // TODO: make it so that the image is no bigger than the screen size and doesnt warp when you change screen width
     return (
         <section className="w-full flex flex-col items-center justify-start py-12 px-12 xl:px-24 mx-auto gap-12">
             <div className="w-full flex justify-start items-center">

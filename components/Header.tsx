@@ -16,7 +16,7 @@ export default function Header() {
                         Gallery
                     </Link>
                     <Link
-                        href="#"
+                        href="/about"
                         className="text-caption hover:opacity-60 transition-opacity"
                     >
                         About
