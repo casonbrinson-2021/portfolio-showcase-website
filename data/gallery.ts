@@ -1,4 +1,11 @@
-export const galleryImages = [
+export type GalleryImageType = {
+    slug: string;
+    src: string;
+    alt: string;
+    caption: string;
+};
+
+export const galleryImages: GalleryImageType[] = [
     {
         slug: "art-1",
         src: "/art-1.jpeg",

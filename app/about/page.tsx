@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function AboutPage() {
     return (
-        <section className="w-full py-12 px-12 xl:px-24 flex justify-between gap-12 max-w-[2560px] mx-auto">
+        <section className="w-full py-12 px-12 xl:px-24 flex flex-col lg:flex-row gap-12 max-w-[1920px] mx-auto">
             {/* Text Column */}
-            <div className="w-1/2 flex flex-col gap-6">
+            <div className="w-full lg:w-1/2 flex flex-col gap-6">
                 <h1 className="text-heading">About Megan</h1>
                 <p className="text-paragraph">
                     Megan is a passionate artist specializing in medium to large
@@ -26,9 +26,9 @@ export default function AboutPage() {
             </div>
 
             {/* Image Column */}
-            <div className="w-1/2 flex items-center justify-center">
+            <div className="w-full lg:w-1/2 flex items-center justify-center">
                 <Image
-                    src="/megan-2.jpg"
+                    src="/megan-1.jpg"
                     alt="Megan Portrait"
                     width={1200}
                     height={1200}
