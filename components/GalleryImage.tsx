@@ -6,6 +6,7 @@ type GalleryImageProps = {
     slug: string;
     caption: string;
     alt?: string;
+    onClick?: () => void;
 };
 
 export default function GalleryImage({
@@ -13,11 +14,12 @@ export default function GalleryImage({
     slug,
     caption,
     alt,
+    onClick,
 }: GalleryImageProps) {
     return (
-        <Link
-            className="relative w-full cursor-pointer overflow-hidden rounded-lg flex flex-col gap-6"
-            href={`/gallery/${slug}`}
+        <div
+            className="relative w-full cursor-pointer overflow-hidden flex flex-col gap-6"
+            onClick={onClick}
         >
             <Image
                 src={src}
@@ -27,6 +29,6 @@ export default function GalleryImage({
                 className="w-full h-auto object-cover rounded-lg"
             />
             <span className=" text-caption whitespace-pre">{caption}</span>
-        </Link>
+        </div>
     );
 }
