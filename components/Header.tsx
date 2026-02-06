@@ -22,7 +22,7 @@ export default function Header() {
                         About
                     </Link>
                     <Link
-                        href="#"
+                        href="/contact"
                         className="text-caption hover:opacity-60 transition-opacity"
                     >
                         Contact

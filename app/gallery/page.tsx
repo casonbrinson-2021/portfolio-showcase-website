@@ -3,9 +3,12 @@
 import GalleryImage from "@/components/GalleryImage";
 import { galleryImages, GalleryImageType } from "@/data/gallery";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function GalleryPage() {
+    const closeButtonRef = useRef<HTMLButtonElement | null>(null);
+    const previouslyFocusedElement = useRef<HTMLElement | null>(null);
+
     const [activeImage, setActiveImage] = useState<null | GalleryImageType>(
         null,
     );
@@ -44,6 +47,36 @@ export default function GalleryPage() {
         }
     }, [activeImage]);
 
+    useEffect(() => {
+        if (!activeImage) return;
+
+        // Save previously focused element
+        previouslyFocusedElement.current =
+            document.activeElement as HTMLElement;
+
+        // Move focus into modal
+        closeButtonRef.current?.focus();
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                closeFullScreenViewer();
+            }
+
+            // Trap tab focus (single-focus-element version)
+            if (e.key === "Tab") {
+                e.preventDefault();
+                closeButtonRef.current?.focus();
+            }
+        };
+
+        document.addEventListener("keydown", handleKeyDown);
+
+        return () => {
+            document.removeEventListener("keydown", handleKeyDown);
+            previouslyFocusedElement.current?.focus();
+        };
+    }, [activeImage]);
+
     return (
         <>
             <section className="w-full max-w-[1920px] mx-auto py-12 px-12 xl:px-24">
@@ -67,6 +100,7 @@ export default function GalleryPage() {
                     className={`fixed inset-0 z-50 bg-background/95 flex items-center justify-center transition-all duration-500 ease-out ${isFullScreenViewerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                 >
                     <button
+                        ref={closeButtonRef}
                         onClick={closeFullScreenViewer}
                         className="absolute top-6 right-8 text-foreground text-5xl font-thin z-50 hover:opacity-80 transition-opacity cursor-pointer"
                         aria-label="Close"
