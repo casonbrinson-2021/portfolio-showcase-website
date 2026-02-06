@@ -32,6 +32,18 @@ export default function GalleryPage() {
         }
     }, [activeImage]);
 
+    useEffect(() => {
+        if (activeImage) {
+            const originalOverflow = document.body.style.overflow;
+            console.log(originalOverflow);
+            document.body.style.overflow = "hidden";
+
+            return () => {
+                document.body.style.overflow = originalOverflow;
+            };
+        }
+    }, [activeImage]);
+
     return (
         <>
             <section className="w-full max-w-[1920px] mx-auto py-12 px-12 xl:px-24">
