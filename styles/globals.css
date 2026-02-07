@@ -14,6 +14,8 @@
 
     --line-heading: 1.15;
     --line-paragraph: 1.7;
+
+    --font-heading: "Libre Baskerville", serif;
 }
 
 @theme inline {
@@ -48,6 +50,7 @@ body {
 
 /* Main page headings */
 .text-heading {
+    font-family: var(--font-heading);
     font-size: var(--text-heading);
     line-height: var(--line-heading);
     font-weight: 400;

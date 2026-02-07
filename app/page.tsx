@@ -46,20 +46,19 @@ export default function HomePage() {
                         <h1 className="text-heading">Art that Brings Joy</h1>
 
                         <p className="text-paragraph">
-                            Original medium to large scale canvas paintings
-                            using oil pastel and acrylic, known for their bold
-                            color palettes and expressive forms. Each piece is
+                            Medium to large-scale original canvas paintings
+                            created in New York City, known for their bold color
+                            palettes and expressive forms. Each piece is
                             designed to bring energy, warmth, and a sense of joy
                             into the spaces they inhabit.
                         </p>
 
                         <p className="text-paragraph">
-                            With experience creating work for a wide range of
-                            clients, every painting is approached with intention
-                            and curiosity—crafting pieces that feel both playful
-                            and considered. This work is driven by a passion for
-                            making art that sparks imagination, invites wonder,
-                            and transforms a room through color and movement.
+                            Every painting is approached with intention and
+                            curiosity—crafting pieces that feel both playful and
+                            considered. This work is driven by a passion for
+                            making art that sparks imagination and transforms a
+                            room through color and movement.
                         </p>
 
                         <p className="text-paragraph">Take a look around!</p>
@@ -87,11 +86,8 @@ export default function HomePage() {
                 <div className="w-full gap-6 flex flex-col text-left">
                     <h2 className="text-heading">Get in Touch</h2>
                     <p className="text-paragraph">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Mauris efficitur lectus sed turpis volutpat, nec
-                        ultrices justo fermentum. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Mauris efficitur lectus sed
-                        turpis volutpat, nec ultrices justo fermentum.
+                        Whether you’re interested in a commission or just want
+                        to say hello, Megan would love to hear from you.
                     </p>
                 </div>
                 <Link
