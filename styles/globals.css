@@ -79,6 +79,10 @@ body {
     color: var(--text-muted);
 }
 
+.font-baskerville {
+    font-family: "Libre Baskerville", serif;
+}
+
 /* -------------------------
    MOBILE ADJUSTMENTS
 -------------------------- */

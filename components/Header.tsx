@@ -4,11 +4,7 @@ export default function Header() {
     return (
         <header className="top-0 bg-background">
             <nav className="px-12 xl:px-24 py-6 flex items-center justify-between">
-                <Link
-                    href="/"
-                    className="text-subheading"
-                    style={{ fontFamily: '"Libre Baskerville", serif' }}
-                >
+                <Link href="/" className="text-subheading font-baskerville">
                     Megan Joy Designs
                 </Link>
 
