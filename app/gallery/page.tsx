@@ -80,7 +80,7 @@ export default function GalleryPage() {
     return (
         <>
             <section className="w-full max-w-[1920px] mx-auto py-12 px-12 xl:px-24">
-                <div className="grid grid-cols-1 lg:grid-cols-2 4xl:grid-cols-3 gap-12 xl:gap-24">
+                <div className="grid grid-cols-1 md:grid-cols-2 4xl:grid-cols-3 gap-12 xl:gap-24">
                     {galleryImages.map((image, index) => (
                         <GalleryImage
                             key={index}
@@ -102,7 +102,7 @@ export default function GalleryPage() {
                     <button
                         ref={closeButtonRef}
                         onClick={closeFullScreenViewer}
-                        className="absolute top-6 right-8 text-foreground text-5xl font-thin z-50 hover:opacity-80 transition-opacity cursor-pointer"
+                        className="absolute top-1 right-4 text-foreground text-5xl font-thin z-50 hover:opacity-80 transition-opacity cursor-pointer"
                         aria-label="Close"
                     >
                         ×
@@ -113,7 +113,7 @@ export default function GalleryPage() {
                         width={1200}
                         height={1200}
                         sizes="90vw"
-                        className="max-h-[90vh] w-[90vw] object-contain"
+                        className="max-h-[90vh] w-[85vw] object-contain"
                         priority
                     />
                 </div>
