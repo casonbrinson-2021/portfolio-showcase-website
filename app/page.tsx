@@ -39,7 +39,7 @@ export default function HomePage() {
 
             {/* Info section */}
             {/* Make the title above the other two elements */}
-            <section className="w-full py-12 px-12 xl:px-24 flex justify-between gap-12 max-w-[1920px]">
+            <section className="w-full py-12 px-12 xl:px-24 flex justify-between gap-12 max-w-[1920px] mx-auto">
                 <div className="w-1/2 flex flex-col gap-6">
                     <h1 className="text-heading">Art that Brings Joy</h1>
                     <p className="text-paragraph">
@@ -62,7 +62,7 @@ export default function HomePage() {
 
                 {/* Image showcase */}
                 {/* Add an on click that shows the words Gallery and then takes the user to the Gallery page */}
-                <div className="flex w-1/2 items-center justify-center">
+                <div className="flex w-1/2 items-center justify-end">
                     <RotatingArtwork
                         images={[
                             { src: "/art-1.jpeg", alt: "Artwork 1" },
@@ -76,121 +76,11 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Testimonials */}
-            {/* TODO: instead of just hiding three of them for mobile, make it a side scroll like chat gpt said */}
-            <section className="w-full py-12 px-12 xl:px-24 flex flex-col gap-12 max-w-[1920px]">
-                <h2 className="text-heading">What People Are Saying</h2>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {/* Testimonial 1 */}
-                    <div className="flex-1 bg-white shadow-md rounded-lg p-6">
-                        <p className="text-paragraph italic">
-                            "Megan’s artwork completely transformed my living
-                            room. The colors are vibrant and her attention to
-                            detail is incredible!"
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — Sarah L.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Facebook Marketplace
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Testimonial 2 */}
-                    <div className="flex-1 bg-white shadow-md rounded-lg p-6">
-                        <p className="text-paragraph italic">
-                            "A true talent! Every piece she creates brings joy
-                            and energy into the space. Highly recommended for
-                            anyone looking for impactful art."
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — Mark D.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Private Commission
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Testimonial 3 */}
-                    <div className="flex-1 bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-                        <p className="text-paragraph italic">
-                            "Working with Megan was a dream. She captured
-                            exactly what I was envisioning for my studio.
-                            Stunning work!"
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — Emily R.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Facebook Marketplace
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Testimonial 4 */}
-                    <div className="hidden md:block flex-1 bg-white shadow-md rounded-lg p-6">
-                        <p className="text-paragraph italic">
-                            "Megan’s artwork completely transformed my living
-                            room. The colors are vibrant and her attention to
-                            detail is incredible!"
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — Timothy L.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Facebook Marketplace
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Testimonial 5 */}
-                    <div className="hidden md:block flex-1 bg-white shadow-md rounded-lg p-6">
-                        <p className="text-paragraph italic">
-                            "A true talent! Every piece she creates brings joy
-                            and energy into the space. Highly recommended for
-                            anyone looking for impactful art."
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — John D.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Private Commission
-                            </span>
-                        </div>
-                    </div>
-
-                    {/* Testimonial 6 */}
-                    <div className="hidden md:block flex-1 bg-white shadow-md rounded-lg p-6 flex flex-col justify-between">
-                        <p className="text-paragraph italic">
-                            "Working with Megan was a dream. She captured
-                            exactly what I was envisioning for my studio.
-                            Stunning work!"
-                        </p>
-                        <div>
-                            <span className="text-caption mt-4 block text-right">
-                                — Ceasar R.
-                            </span>
-                            <span className="text-caption block text-right text-muted">
-                                via Facebook Marketplace
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* Contact / Call to Action */}
-            <section className="w-full py-12 px-12 xl:px-24 flex flex-col gap-12 ">
+            <section className="w-full py-12 px-12 xl:px-24 flex flex-col gap-6 max-w-[1920px] mx-auto">
                 <h2 className="text-heading">Get in Touch</h2>
-                <div className="flex items-center gap-12">
-                    <p className="text-paragraph w-full">
+                <div className="flex justify-between items-center gap-12">
+                    <p className="text-paragraph">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Mauris efficitur lectus sed turpis volutpat, nec
                         ultrices justo fermentum. Lorem ipsum dolor sit amet,
@@ -199,9 +89,9 @@ export default function HomePage() {
                     </p>
                     <Link
                         href="/contact"
-                        className="px-6 py-3 bg-foreground text-paragraph text-background hover:opacity-80 transition-opacity rounded-md cursor-pointer"
+                        className="px-6 py-3 min-w-[200px] bg-foreground text-paragraph text-background text-center hover:opacity-80 transition-opacity rounded-md cursor-pointer"
                     >
-                        Contact Megan
+                        Contact
                     </Link>
                 </div>
             </section>

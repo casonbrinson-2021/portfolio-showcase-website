@@ -26,7 +26,7 @@ export default function AboutPage() {
             </div>
 
             {/* Image Column */}
-            <div className="w-full lg:w-1/2 flex items-center justify-center">
+            <div className="w-full lg:w-1/2 flex items-center justify-end">
                 <Image
                     src="/megan-1.jpg"
                     alt="Megan Portrait"
