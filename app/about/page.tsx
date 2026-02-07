@@ -26,13 +26,13 @@ export default function AboutPage() {
             </div>
 
             {/* Image Column */}
-            <div className="w-full lg:w-1/2 flex items-center justify-end">
+            <div className="w-full lg:w-1/2 flex items-center justify-center lg:justify-end">
                 <Image
                     src="/megan-1.jpg"
                     alt="Megan Portrait"
                     width={1200}
                     height={1200}
-                    className="w-full max-w-[600px] h-auto rounded-xl object-cover"
+                    className="w-full max-w-[500px] h-auto rounded-xl object-cover"
                     priority
                 />
             </div>
