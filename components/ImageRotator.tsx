@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 
 type ImageRotatorProps = {
@@ -31,15 +32,28 @@ export default function ImageRotator({
 
     return (
         <div className="flex flex-col items-center justify-center gap-4">
-            <div className="w-full max-w-[500px] h-auto rounded-xl overflow-hidden">
+            {/* Image + overlay */}
+            <div className="relative group w-full max-w-[500px] rounded-xl overflow-hidden cursor-pointer">
                 <Image
                     src={currentImage.src}
                     alt={currentImage.alt ?? "Artwork"}
                     width={1200}
                     height={1200}
                     priority
+                    className="w-full h-auto"
                 />
+
+                {/* Hover overlay */}
+                <Link
+                    href="/gallery"
+                    className="absolute inset-0 flex items-center justify-center bg-background/0 opacity-0 transition-all duration-300 group-hover:bg-background/70 group-hover:opacity-100"
+                >
+                    <span className="text-subheading tracking-wide">
+                        View Gallery
+                    </span>
+                </Link>
             </div>
+
             {/* Dots */}
             <div className="flex gap-3">
                 {images.map((_, index) => (
