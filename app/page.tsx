@@ -199,7 +199,7 @@ export default function HomePage() {
                     </p>
                     <Link
                         href="/contact"
-                        className="px-6 py-3 bg-foreground text-background hover:opacity-80 transition-opacity rounded-md cursor-pointer"
+                        className="px-6 py-3 bg-foreground text-paragraph text-background hover:opacity-80 transition-opacity rounded-md cursor-pointer"
                     >
                         Contact Megan
                     </Link>
