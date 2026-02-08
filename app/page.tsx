@@ -12,7 +12,7 @@ export default function HomePage() {
     return (
         <>
             {/* Hero Image Section */}
-            <section className="w-full flex mb-12">
+            <section className="w-full flex">
                 <div className="w-1/2">
                     <Image
                         src="/hero-1.jpeg"

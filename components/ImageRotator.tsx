@@ -55,13 +55,13 @@ export default function ImageRotator({
             </div>
 
             {/* Dots */}
-            <div className="flex gap-3">
+            <div className="flex gap-4 lg:gap-3">
                 {images.map((_, index) => (
                     <button
                         key={index}
                         onClick={() => setCurrentIndex(index)}
                         aria-label={`Show image ${index + 1}`}
-                        className={`h-2 w-2 rounded-full transition-all duration-500 cursor-pointer ${
+                        className={`h-3 w-3 lg:h-2 lg:w-2 rounded-full transition-all duration-500 cursor-pointer ${
                             index === currentIndex
                                 ? "bg-black scale-160"
                                 : "bg-black opacity-30 hover:opacity-50"
