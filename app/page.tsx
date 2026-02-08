@@ -39,7 +39,7 @@ export default function HomePage() {
             </section>
 
             {/* Info section */}
-            {/* Make the title above the other two elements */}
+            {/* TOOD: Make the title above the other two elements */}
             <section className="w-full py-12 px-6 md:px-12 xl:px-24 max-w-[1920px] mx-auto">
                 <div className="flex flex-col lg:flex-row gap-12 items-center lg:items-start">
                     {/* Text */}
@@ -77,13 +77,9 @@ export default function HomePage() {
 
             {/* Contact / Call to Action */}
             {/* Maybe get rid of this and just have a contact button at the bottom on top of cool photos */}
-            <section className="w-full py-12 px-12 xl:px-24 flex flex-col items-start lg:items-center lg:flex-row gap-12 max-w-[1920px] mx-auto">
-                <div className="w-full gap-6 flex flex-col text-left">
+            <section className="w-full py-12 px-12 xl:px-24 flex flex-col items-start lg:items-center lg:flex-row gap-6 max-w-[1920px] mx-auto">
+                <div className="w-full flex flex-col text-left">
                     <h2 className="text-heading">Get in Touch</h2>
-                    <p className="text-paragraph">
-                        Whether you’re interested in a commission or just want
-                        to say hello, Megan would love to hear from you.
-                    </p>
                 </div>
                 <Link
                     href="/contact"
@@ -92,6 +88,33 @@ export default function HomePage() {
                     Contact
                 </Link>
             </section>
+
+            {/* 
+            <section className="w-full flex">
+                <div className="w-1/2">
+                    <Image
+                        src="/hero-1.jpeg"
+                        alt="Hero Artwork 1"
+                        width={2154}
+                        height={3750}
+                        sizes="50vw"
+                        className="w-full h-auto"
+                        priority
+                    />
+                </div>
+
+                <div className="w-1/2">
+                    <Image
+                        src="/hero-2.jpeg"
+                        alt="Hero Artwork 1"
+                        width={2154}
+                        height={3750}
+                        sizes="50vw"
+                        className="w-full h-auto"
+                        priority
+                    />
+                </div>
+            </section> */}
         </>
     );
 }
