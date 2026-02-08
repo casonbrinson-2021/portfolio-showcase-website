@@ -82,6 +82,7 @@ export default function HomePage() {
             </section>
 
             {/* Contact / Call to Action */}
+            {/* Maybe get rid of this and just have a contact button at the bottom on top of cool photos */}
             <section className="w-full py-12 px-12 xl:px-24 flex flex-col items-start lg:items-center lg:flex-row gap-12 max-w-[1920px] mx-auto">
                 <div className="w-full gap-6 flex flex-col text-left">
                     <h2 className="text-heading">Get in Touch</h2>

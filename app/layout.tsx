@@ -3,9 +3,8 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 //TODO:
-// 1. Get about page text blurb from Megan
-// 2. Get contact page blurb from Megan
 // 3. Edit and Add all gallery images and make sure captions are correct
+// 4. Make header mobile version
 
 export const metadata = {
     title: "Megan — Artist",

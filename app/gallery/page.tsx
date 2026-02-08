@@ -38,7 +38,6 @@ export default function GalleryPage() {
     useEffect(() => {
         if (activeImage) {
             const originalOverflow = document.body.style.overflow;
-            console.log(originalOverflow);
             document.body.style.overflow = "hidden";
 
             return () => {

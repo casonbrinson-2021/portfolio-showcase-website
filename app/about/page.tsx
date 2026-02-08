@@ -13,15 +13,16 @@ export default function AboutPage() {
                     ability to fill a room with energy and joy.
                 </p>
                 <p className="text-paragraph">
-                    Over the years, Megan has created custom artworks for a wide
-                    variety of clients, each piece crafted with intention,
-                    curiosity, and a love for storytelling through color and
-                    movement.
+                    Originally from Hong Kong and now based in New York, Megan
+                    draws inspiration from her multicultural background and the
+                    movement, rhythm, and creativity of city life. Her work
+                    blends curiosity and intention, telling stories through
+                    color, texture, and motion.
                 </p>
                 <p className="text-paragraph">
-                    Her goal is simple: to make art that sparks imagination,
-                    invites wonder, and brings a sense of beauty and happiness
-                    to any space it inhabits.
+                    Over the years, Megan has created custom artworks for a wide
+                    variety of clients, with each piece thoughtfully crafted to
+                    reflect emotion, imagination, and a sense of place.
                 </p>
             </div>
 

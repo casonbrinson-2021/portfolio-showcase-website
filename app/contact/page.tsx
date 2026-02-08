@@ -5,13 +5,6 @@ import InstagramIcon from "@/components/InstagramIcon";
 export default function ContactPage() {
     return (
         <>
-            {/* Socials section */}
-            {/* <section className="w-full max-w-[1920px] mx-auto py-16 px-12 xl:px-24">
-                <div className="w-full flex justify-center items-center">
-                    <InstagramIcon className="w-8 h-8 text-foreground hover:opacity-80 transition-opacity cursor-pointer" />
-                </div>
-            </section> */}
-
             <section className="w-full max-w-[1920px] mx-auto py-16 px-12 xl:px-24">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
                     {/* Intro Text */}
@@ -21,13 +14,13 @@ export default function ContactPage() {
                         <p className="text-paragraph">
                             If you’re interested in a commission, have a
                             question about an artwork, or just want to say
-                            hello, feel free to reach out. Megan is always happy
+                            hello, I’d love to hear from you. I’m always happy
                             to connect and talk through ideas.
                         </p>
 
                         <p className="text-paragraph">
-                            Use the form to send a message and you’ll hear back
-                            as soon as possible.
+                            Use the form to send a message and I’ll get back to
+                            you as soon as possible.
                         </p>
                     </div>
 
@@ -46,7 +39,7 @@ export default function ContactPage() {
                                     "message",
                                 ) as HTMLTextAreaElement
                             ).value;
-                            const mailtoLink = `mailto:megan@example.com?subject=Website Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
+                            const mailtoLink = `mailto:meganjoylee2000@gmail.com?subject=Website Inquiry from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}`;
                             window.location.href = mailtoLink;
                         }}
                     >
