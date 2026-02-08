@@ -1,7 +1,5 @@
 "use client";
 
-import InstagramIcon from "@/components/InstagramIcon";
-
 export default function ContactPage() {
     return (
         <>

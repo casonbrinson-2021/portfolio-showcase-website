@@ -9,12 +9,11 @@ export default function Footer() {
 
                 <div className="flex items-end gap-4">
                     <a
-                        href="#"
+                        href="https://www.facebook.com/megan.lee.5477272"
                         className="text-caption hover:opacity-60 transition-opacity"
                         target="_blank"
-                        rel="noopener noreferrer"
                     >
-                        Instagram
+                        Facebook
                     </a>
                     <a
                         href="mailto:meganjoylee2000@gmail.com"
