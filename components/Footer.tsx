@@ -4,9 +4,7 @@ export default function Footer() {
             <div className="px-12 xl:px-24 py-6 text-sm flex justify-between">
                 <div className="flex flex-col gap-4">
                     <span className="text-caption">With &lt;3 from NYC</span>
-                    <span className="text-caption">
-                        © {new Date().getFullYear()} Megan Joy Designs
-                    </span>
+                    <span className="text-caption">Megan Joy Designs</span>
                 </div>
 
                 <div className="flex items-end gap-4">
