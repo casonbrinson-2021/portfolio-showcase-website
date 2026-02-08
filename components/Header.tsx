@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { MenuIcon } from "./MenuIcon";
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -49,50 +50,69 @@ export default function Header() {
                 {/* Mobile Menu Button */}
                 <button
                     onClick={() => setMenuOpen(true)}
-                    className="md:hidden text-caption cursor-pointer hover:opacity-60 transition-opacity"
+                    className="md:hidden text-caption hover:opacity-60 transition-opacity cursor-pointer"
                     aria-label="Open menu"
                 >
-                    Menu
+                    <MenuIcon className="w-8 h-8 text-foreground" />
                 </button>
             </nav>
 
             {/* Mobile Menu Overlay */}
-            {menuOpen && (
-                <div
-                    className={`fixed inset-0 bg-background flex flex-col items-center justify-center gap-8 ${menuOpen ? "animate-fade-in" : "animate-fade-out"}`}
+            <div
+                className={`
+                    z-100 fixed inset-0 bg-background flex flex-col items-center justify-center gap-12
+                    transition-opacity duration-300 ease-in-out
+                    ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+                `}
+            >
+                <button
+                    onClick={() => setMenuOpen(false)}
+                    className="absolute top-1 right-4 text-5xl font-thin cursor-pointer text-foreground"
                 >
-                    {/* Close button */}
-                    <button
-                        onClick={() => setMenuOpen(false)}
-                        className="absolute top-1 right-4 text-5xl font-thin cursor-pointer"
-                        aria-label="Close menu"
-                    >
-                        ×
-                    </button>
+                    ×
+                </button>
 
-                    <Link
-                        href="/gallery"
-                        onClick={() => setMenuOpen(false)}
-                        className="text-subheading hover:opacity-60 transition-opacity"
+                <Link
+                    href="/gallery"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-subheading hover:opacity-60 transition-opacity"
+                >
+                    Gallery
+                </Link>
+                <Link
+                    href="/about"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-subheading hover:opacity-60 transition-opacity"
+                >
+                    About
+                </Link>
+                <Link
+                    href="/contact"
+                    onClick={() => setMenuOpen(false)}
+                    className="text-subheading hover:opacity-60 transition-opacity"
+                >
+                    Contact
+                </Link>
+
+                <span className="h-px w-24 bg-foreground/10" />
+
+                <div className="flex gap-8 items-center">
+                    <a
+                        href="#"
+                        className="text-caption hover:opacity-60 transition-opacity"
+                        target="_blank"
+                        rel="noopener noreferrer"
                     >
-                        Gallery
-                    </Link>
-                    <Link
-                        href="/about"
-                        onClick={() => setMenuOpen(false)}
-                        className="text-subheading hover:opacity-60 transition-opacity"
+                        Instagram
+                    </a>
+                    <a
+                        href="mailto:meganjoylee2000@gmail.com"
+                        className="text-caption hover:opacity-60 transition-opacity"
                     >
-                        About
-                    </Link>
-                    <Link
-                        href="/contact"
-                        onClick={() => setMenuOpen(false)}
-                        className="text-subheading hover:opacity-60 transition-opacity"
-                    >
-                        Contact
-                    </Link>
+                        Email
+                    </a>
                 </div>
-            )}
+            </div>
         </header>
     );
 }
