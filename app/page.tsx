@@ -1,6 +1,7 @@
 import Image from "next/image";
 import RotatingArtwork from "@/components/ImageRotator";
 import Link from "next/link";
+import { featuredImages } from "@/data/featured";
 
 //TODO:
 // After everything is all polished come back and work on performance like
@@ -65,16 +66,9 @@ export default function HomePage() {
                     </div>
 
                     {/* Image showcase */}
-                    {/* Add an on click that shows the words Gallery and then takes the user to the Gallery page */}
                     <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
                         <RotatingArtwork
-                            images={[
-                                { src: "/art-1.jpeg", alt: "Artwork 1" },
-                                { src: "/art-2.jpeg", alt: "Artwork 2" },
-                                { src: "/art-3.jpeg", alt: "Artwork 3" },
-                                { src: "/art-4.jpeg", alt: "Artwork 4" },
-                                { src: "/art-5.jpeg", alt: "Artwork 5" },
-                            ]}
+                            images={featuredImages}
                             intervalMs={5000}
                         />
                     </div>
