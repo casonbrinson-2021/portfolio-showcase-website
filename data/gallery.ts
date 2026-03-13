@@ -40,31 +40,37 @@ export const galleryImages: GalleryImageType[] = [
     {
         slug: "art-6",
         src: "/gallery/art-6.jpeg",
-        alt: "Artwork 5",
+        alt: "Artwork 6",
         caption: '16" x 20"\nacrylic & acrylic gel on canvas',
     },
     {
         slug: "art-7",
         src: "/gallery/art-7.jpeg",
-        alt: "Artwork 5",
+        alt: "Artwork 7",
         caption: '24" x 36"\nacrylic paint & pastels on canvas',
     },
     {
         slug: "art-8",
         src: "/gallery/art-8.jpeg",
-        alt: "Artwork 5",
+        alt: "Artwork 8",
         caption: '24" x 36"\nacrylic paint & pastels on canvas',
+    },
+    {
+        slug: "art-11",
+        src: "/gallery/art-11.jpeg",
+        alt: "Artwork 11",
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
     },
     {
         slug: "art-9",
         src: "/gallery/art-9.jpeg",
-        alt: "Artwork 5",
+        alt: "Artwork 9",
         caption: '24" x 36"\nacrylic paint & pastels on canvas',
     },
     {
         slug: "art-10",
         src: "/gallery/art-10.jpeg",
-        alt: "Artwork 5",
+        alt: "Artwork 10",
         caption: '16" x 20"\nacrylic paint & pastels on canvas',
     },
 ];
