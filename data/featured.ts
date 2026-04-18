@@ -9,19 +9,19 @@ export const featuredImages = [
         alt: "Artwork 1",
     },
     {
-        src: "/featured/art-2.jpeg",
-        alt: "Artwork 2",
+        src: "/featured/art-6.jpeg",
+        alt: "Artwork 6",
+    },
+    {
+        src: "/featured/art-7.jpeg",
+        alt: "Artwork 7",
     },
     {
         src: "/featured/art-3.jpeg",
         alt: "Artwork 3",
     },
     {
-        src: "/featured/art-4.jpeg",
-        alt: "Artwork 4",
-    },
-    {
-        src: "/featured/art-5.jpeg",
-        alt: "Artwork 5",
+        src: "/featured/art-2.jpeg",
+        alt: "Artwork 2",
     },
 ];

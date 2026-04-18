@@ -15,8 +15,8 @@ export default function HomePage() {
             <section className="w-full flex">
                 <div className="w-1/2">
                     <Image
-                        src="/hero-1.jpeg"
-                        alt="Hero Artwork 1"
+                        src="/hero-3.jpeg"
+                        alt="Hero Artwork 3"
                         width={2154}
                         height={3750}
                         sizes="50vw"
