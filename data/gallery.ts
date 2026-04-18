@@ -10,7 +10,7 @@ export const galleryImages: GalleryImageType[] = [
         slug: "art-14",
         src: "/gallery/art-14.jpeg",
         alt: "Artwork 14",
-        caption: '24" x 36"\nacrylic paint & pastels on canvas',
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
     },
     {
         slug: "art-13",
@@ -22,7 +22,7 @@ export const galleryImages: GalleryImageType[] = [
         slug: "art-15",
         src: "/gallery/art-15.jpeg",
         alt: "Artwork 15",
-        caption: '24" x 36"\nacrylic paint & pastels on canvas',
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
     },
     {
         slug: "art-11",
