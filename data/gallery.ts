@@ -7,9 +7,39 @@ export type GalleryImageType = {
 
 export const galleryImages: GalleryImageType[] = [
     {
+        slug: "art-16",
+        src: "/gallery/art-16.jpeg",
+        alt: "Artwork 16",
+        caption: '36" x 48"\nacrylic paint & pastels on canvas',
+    },
+    {
+        slug: "art-20",
+        src: "/gallery/art-20.jpeg",
+        alt: "Artwork 16",
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
+    },
+    {
+        slug: "art-18",
+        src: "/gallery/art-18.jpeg",
+        alt: "Artwork 16",
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
+    },
+    {
         slug: "art-14",
         src: "/gallery/art-14.jpeg",
         alt: "Artwork 14",
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
+    },
+    {
+        slug: "art-19",
+        src: "/gallery/art-19.jpeg",
+        alt: "Artwork 16",
+        caption: '30" x 40"\nacrylic paint & pastels on canvas',
+    },
+    {
+        slug: "art-17",
+        src: "/gallery/art-17.jpeg",
+        alt: "Artwork 16",
         caption: '30" x 40"\nacrylic paint & pastels on canvas',
     },
     {
