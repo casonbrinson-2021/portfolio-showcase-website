@@ -5,12 +5,12 @@ export type FeaturedImageType = {
 
 export const featuredImages = [
     {
-        src: "/featured/art-1.jpeg",
+        src: "/featured/art-20.jpeg",
         alt: "Artwork 1",
     },
     {
-        src: "/featured/art-6.jpeg",
-        alt: "Artwork 6",
+        src: "/featured/art-8.jpeg",
+        alt: "Artwork 24",
     },
     {
         src: "/featured/art-7.jpeg",
