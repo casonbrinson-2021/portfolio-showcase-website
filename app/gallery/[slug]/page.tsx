@@ -36,7 +36,12 @@ export default function GalleryDetailPage() {
                     className="w-full h-auto rounded-lg"
                     priority
                 />
-                <div className="mt-6 text-caption">{artwork.caption}</div>
+                <div className="mt-6 text-caption whitespace-pre">
+                    {artwork.title && (
+                        <span className="block italic">{artwork.title}</span>
+                    )}
+                    <span className="block">{artwork.caption}</span>
+                </div>
             </div>
         </section>
     );

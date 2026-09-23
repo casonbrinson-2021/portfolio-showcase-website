@@ -4,6 +4,7 @@ import Link from "next/link";
 type GalleryImageProps = {
     src: string;
     slug: string;
+    title?: string | null;
     caption: string;
     alt?: string;
     onClick?: () => void;
@@ -12,6 +13,7 @@ type GalleryImageProps = {
 export default function GalleryImage({
     src,
     slug,
+    title,
     caption,
     alt,
     onClick,
@@ -28,7 +30,10 @@ export default function GalleryImage({
                 height={1200}
                 className="w-full h-auto object-cover rounded-lg"
             />
-            <span className=" text-caption whitespace-pre">{caption}</span>
+            <div className="text-caption whitespace-pre">
+                {title && <span className="block italic">{title}</span>}
+                <span className="block">{caption}</span>
+            </div>
         </div>
     );
 }

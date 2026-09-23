@@ -85,6 +85,7 @@ export default function GalleryPage() {
                             key={index}
                             src={image.src}
                             slug={image.slug}
+                            title={image.title}
                             caption={image.caption}
                             alt={image.alt}
                             onClick={() => openFullScreenViewer(image)}

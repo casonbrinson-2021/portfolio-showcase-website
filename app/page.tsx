@@ -51,7 +51,16 @@ export default function HomePage() {
                             created in New York City, known for their bold color
                             palettes and expressive forms. Each piece is
                             designed to bring energy, warmth, and a sense of joy
-                            into the spaces they inhabit.
+                            into the spaces they inhabit. Recently featured in{" "}
+                            <a
+                                href="https://www.architecturaldigest.com/story/paige-paul-and-tommy-paul-connecticut-estate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline hover:opacity-60 transition-opacity"
+                            >
+                                Architectural Digest
+                            </a>
+                            , in the Connecticut home of Paige and Tommy Paul.
                         </p>
 
                         <p className="text-paragraph">
