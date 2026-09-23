@@ -5,7 +5,7 @@ export type FeaturedImageType = {
 
 export const featuredImages = [
     {
-        src: "/featured/paige-paul-screenshot.jpeg",
+        src: "/featured/paige-paul-screenshot-new.jpeg",
         alt: "Paige Paul Screenshot",
     },
     {
