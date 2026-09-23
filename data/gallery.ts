@@ -60,7 +60,7 @@ export const galleryImages: GalleryImageType[] = [
         slug: "art-24",
         src: "/gallery/art-24.jpeg",
         alt: "Artwork 24",
-        title: null,
+        title: "Where the Grass Grows",
         caption: '36" x 48"\nacrylic paint & pastels on canvas',
     },
     {
